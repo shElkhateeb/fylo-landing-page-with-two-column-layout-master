@@ -6,17 +6,37 @@
 
 :root {
   --color-very-dark-blue: hsl(243, 87%, 12%);
-  --color-desaturated-blue: hsl(238, 22%, 44%);
+  --color-desaturated-blue: hsl(239, 22%, 44%);
   --color-bright-blue: hsl(224, 93%, 58%);
   --color-moderate-cyan: hsl(170, 45%, 43%);
   --color-light-grayish-blue: hsl(240, 75%, 98%);
   --color-light-gray: hsl(0, 0%, 75%);
+  --padding-main: 5vw;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  padding: var(--padding-main);
+}
+/* Start header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    color: var(--color-very-dark-blue);
 }
 
+.logo {
+    width: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 5vw;
+}
+/* End header */
+/* Start footer */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -25,3 +45,4 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* End footer */
