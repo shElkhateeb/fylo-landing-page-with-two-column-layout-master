@@ -20,16 +20,6 @@ body {
   line-height: 1.6em;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    text-align: center;
-  }
-
-  blockquote {
-    margin: auto;
-  }
-}
-
 header,
 section,
 footer {
@@ -65,9 +55,20 @@ nav a {
 /* End header */
 /* Start main */
 
+section {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  align-items: flex-start;
+}
+
+section > * {
+  width: 300px;
+  flex: 1 1 45%;
+}
+
 .text-button > * {
   height: 3em;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -76,7 +77,6 @@ nav a {
 }
 
 .text-button input[type="submit"] {
-  width: 11rem;
   border: none;
   color: white;
   font-weight: bold;
@@ -84,7 +84,6 @@ nav a {
 }
 
 .text-button input[type="email"] {
-  width: 17.5rem;
   padding: 1rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -119,7 +118,7 @@ blockquote {
 blockquote cite {
   display: flex;
   align-items: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   line-height: 1rem;
   margin-top: 1rem;
@@ -148,6 +147,15 @@ blockquote cite .title {
 section:nth-child(3) {
   background-color: var(--color-desaturated-blue);
   color: var(--color-light-grayish-blue);
+  flex-direction: row;
+}
+
+section:nth-child(3) input[type="email"] {
+  width: 30rem;
+}
+
+section:nth-child(3) article {
+  min-width: 240px;
 }
 /* End main */
 /* Start footer */
@@ -166,3 +174,26 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 /* End footer */
+@media screen and (min-width: 537px) {
+  .text-button input[type="submit"] {
+    width: 11rem;
+  }
+
+  .text-button input[type="email"] {
+    width: 17.5rem;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  body {
+    text-align: center;
+  }
+
+  blockquote {
+    margin: auto;
+  }
+
+  input {
+    width: 100%;
+  }
+}
