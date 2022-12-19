@@ -17,6 +17,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
 }
 
 @media screen and (max-width: 768px) {
@@ -37,6 +38,11 @@ footer {
 
 h2 {
   font: 700 32px "Raleway", sans-serif;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 /* Start header */
