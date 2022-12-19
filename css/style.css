@@ -12,7 +12,7 @@
   --color-moderate-cyan: hsl(170, 45%, 43%);
   --color-light-grayish-blue: hsl(240, 75%, 98%);
   --color-light-gray: hsl(0, 0%, 75%);
-  --padding-main: 5vw;
+  --padding-main: 7vw 5vw;
 }
 
 body {
@@ -64,6 +64,7 @@ section {
 section > * {
   width: 300px;
   flex: 1 1 45%;
+  margin: 1em;
 }
 
 .text-button > * {
@@ -97,6 +98,8 @@ section:nth-child(2) {
 
 section:nth-child(2) a {
   color: var(--color-moderate-cyan);
+  display: block;
+  margin-bottom: 2em;
 }
 
 blockquote {
@@ -106,7 +109,6 @@ blockquote {
   font-size: calc(0.6rem + 0.25vw);
   line-height: 1.5rem;
   text-align: left;
-  margin-top: 2rem;
   box-shadow: 1px 1px 8px var(--color-light-gray);
   border-radius: 2%;
   -webkit-border-radius: 2%;
