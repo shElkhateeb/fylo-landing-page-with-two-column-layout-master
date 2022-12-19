@@ -48,7 +48,23 @@ nav a {
   margin-right: 5vw;
 }
 /* End header */
+/* Start main */
+section:nth-child(2) {
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section:nth-child(3) {
+  background-color: var(--color-desaturated-blue);
+}
+/* End main */
 /* Start footer */
+
+footer {
+  background-color: var(--color-very-dark-blue);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
