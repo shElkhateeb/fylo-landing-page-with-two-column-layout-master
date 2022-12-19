@@ -60,14 +60,20 @@ section:nth-child(2) {
   background-size: cover;
 }
 
+section:nth-child(2) a {
+  color: var(--color-moderate-cyan);
+}
+
 section:nth-child(3) {
   background-color: var(--color-desaturated-blue);
+  color: var(--color-light-grayish-blue);
 }
 /* End main */
 /* Start footer */
 
 footer {
   background-color: var(--color-very-dark-blue);
+  color: var(--color-light-grayish-blue);
 }
 
 .attribution {
