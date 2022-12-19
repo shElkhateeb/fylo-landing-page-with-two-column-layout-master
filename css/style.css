@@ -58,6 +58,32 @@ nav a {
 }
 /* End header */
 /* Start main */
+
+.text-button > * {
+  height: 3em;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.text-button input[type="submit"] {
+  width: 11rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: var(--color-bright-blue);
+}
+
+.text-button input[type="email"] {
+  width: 17.5rem;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 section:nth-child(2) {
   background-image: url(../images/bg-curve-desktop.svg);
   background-repeat: no-repeat;
