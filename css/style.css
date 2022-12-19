@@ -19,6 +19,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  blockquote {
+    margin: auto;
+  }
+}
+
 header,
 section,
 footer {
@@ -27,12 +37,6 @@ footer {
 
 h2 {
   font: 700 32px "Raleway", sans-serif;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    text-align: center;
-  }
 }
 
 /* Start header */
@@ -62,6 +66,51 @@ section:nth-child(2) {
 
 section:nth-child(2) a {
   color: var(--color-moderate-cyan);
+}
+
+blockquote {
+  max-width: 320px;
+  background-color: white;
+  padding: 1.5rem;
+  font-size: calc(0.6rem + 0.25vw);
+  line-height: 1.5rem;
+  text-align: left;
+  margin-top: 2rem;
+  box-shadow: 1px 1px 8px var(--color-light-gray);
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
+blockquote cite {
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  line-height: 1rem;
+  margin-top: 1rem;
+}
+
+blockquote cite img {
+  margin-right: 5%;
+  width: calc(2rem + 0.2vw);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+blockquote cite .name {
+  font-weight: bold;
+  font-size: calc(0.6rem + 0.2vw);
+}
+
+blockquote cite .title {
+  font-size: calc(0.5rem + 0.2vw);
+  color: var(--color-desaturated-blue);
 }
 
 section:nth-child(3) {
