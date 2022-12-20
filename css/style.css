@@ -103,7 +103,7 @@ section:nth-child(1) h2 {
 }
 
 section:nth-child(2) h2 {
-  font-size: calc(0.5rem + 2vw);
+  font-size: calc(1rem + 1vw);
 }
 
 section:nth-child(2) {
@@ -170,7 +170,7 @@ section:nth-child(3) {
 }
 
 section:nth-child(3) h2 {
-  font-size: calc(0.9rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 
 section:nth-child(3) input[type="email"] {
