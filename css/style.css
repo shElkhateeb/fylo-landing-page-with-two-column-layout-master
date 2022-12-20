@@ -101,6 +101,7 @@ section:nth-child(1) h2 {
   color: white;
   font-weight: bold;
   background-color: var(--color-bright-blue);
+  box-shadow: 1px 1px 4px hsl(0, 0%, 75%, 50%);
   cursor: pointer;
 }
 
