@@ -94,6 +94,12 @@ section:nth-child(1) h2 {
   color: white;
   font-weight: bold;
   background-color: var(--color-bright-blue);
+  cursor: pointer;
+}
+
+.text-button input[type="submit"]:hover {
+  filter: brightness(150%);
+  -webkit-filter: brightness(150%);
 }
 
 .text-button input[type="email"] {
@@ -117,6 +123,11 @@ section:nth-child(2) a {
   color: var(--color-moderate-cyan);
   display: block;
   margin-bottom: 2em;
+}
+
+section:nth-child(2) a:hover {
+  filter: brightness(150%);
+  -webkit-filter: brightness(150%);
 }
 
 blockquote {
@@ -214,6 +225,11 @@ ul a {
   text-decoration: none;
 }
 
+.container ul a:hover {
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%);
+}
+
 .social {
   display: flex;
 }
@@ -224,6 +240,27 @@ ul a {
   filter: invert(90%) sepia(40%) saturate(83%) hue-rotate(198deg)
     brightness(96%) contrast(107%);
   -webkit-filter: invert(90%) sepia(40%) saturate(83%) hue-rotate(198deg);
+}
+
+.social li:nth-child(1) a:hover {
+  filter: invert(31%) sepia(88%) saturate(749%) hue-rotate(191deg)
+    brightness(95%) contrast(78%);
+  -webkit-filter: invert(31%) sepia(88%) saturate(749%) hue-rotate(191deg)
+    brightness(95%) contrast(78%);
+}
+
+.social li:nth-child(2) a:hover {
+  filter: invert(55%) sepia(94%) saturate(1772%) hue-rotate(175deg)
+    brightness(90%) contrast(111%);
+  -webkit-filter: invert(55%) sepia(94%) saturate(1772%) hue-rotate(175deg)
+    brightness(90%) contrast(111%);
+}
+
+.social li:nth-child(3) a:hover {
+  filter: invert(27%) sepia(22%) saturate(6004%) hue-rotate(315deg)
+    brightness(101%) contrast(94%);
+  -webkit-filter: invert(27%) sepia(22%) saturate(6004%) hue-rotate(315deg)
+    brightness(101%) contrast(94%);
 }
 
 .attribution {
