@@ -59,6 +59,7 @@ nav a {
   text-decoration: none;
   margin-left: 4vw;
   font-size: calc(0.8rem + 0.25vw);
+  color: var(--color-very-dark-blue);
 }
 /* End header */
 /* Start main */
