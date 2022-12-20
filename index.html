@@ -50,11 +50,15 @@
             and co-workers.
           </p>
           <form class="text-button">
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email..."
-            />
+            <div class="email">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email..."
+                required
+              />
+              <p class="message">Please check your email</p>
+            </div>
             <input type="submit" value="Get Started" />
           </form>
         </article>
@@ -105,7 +109,15 @@
           </p>
         </article>
         <form class="text-button">
-          <input type="email" name="email" placeholder="email@example.com" />
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+            <p class="message">Please check your email</p>
+          </div>
           <input type="submit" value="Get Started For Free" />
         </form>
       </section>

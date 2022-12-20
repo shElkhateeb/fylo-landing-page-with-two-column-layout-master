@@ -79,7 +79,13 @@ section:nth-child(1) h2 {
   font-size: calc(1.2rem + 1.2vw);
 }
 
-.text-button > * {
+.text-button {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-button input[type="submit"],
+.text-button input[type="email"] {
   height: 3em;
   font-family: "Raleway", sans-serif;
   border-radius: 3px;
@@ -106,6 +112,29 @@ section:nth-child(1) h2 {
   padding: 1rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.text-button input[type="email"]:invalid:not(:placeholder-shown) {
+  outline: solid 2px hsla(0, 100%, 50%, 0.5);
+  border: none;
+  position: relative;
+}
+
+.message {
+  font: 0.8rem "Raleway", sans-serif;
+  color: hsla(0, 100%, 50%, 0.5);
+  margin-bottom: 1em;
+  text-align: left;
+  display: none;
+}
+
+.text-button input[type="email"]:invalid:not(:placeholder-shown) + .message {
+  display: block;
+}
+
+.text-button input[type="email"]:valid {
+  outline: solid 2px rgb(0, 128, 0, 50%);
+  border: none;
 }
 
 section:nth-child(2) h2 {
@@ -186,6 +215,10 @@ section:nth-child(3) h2 {
 
 section:nth-child(3) input[type="email"] {
   width: 30rem;
+}
+
+section:nth-child(3) input[type="email"]:invalid:not(:placeholder-shown) + .message {
+  color: inherit;
 }
 
 section:nth-child(3) article {
