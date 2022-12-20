@@ -179,12 +179,19 @@ section:nth-child(3) article {
 footer {
   background-color: var(--color-very-dark-blue);
   color: var(--color-light-grayish-blue);
+  text-align: left;
+}
+
+footer a > img {
+  filter: invert(50%) grayscale(100%) brightness(200%);
+  -webkit-filter: invert(50%) grayscale(100%) brightness(200%);
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 ul {
@@ -192,10 +199,9 @@ ul {
   list-style-type: none;
   line-height: 2em;
   margin-bottom: 1em;
-  text-align: left;
 }
 
-ul a{
+ul a {
   color: inherit;
   text-decoration: none;
 }
