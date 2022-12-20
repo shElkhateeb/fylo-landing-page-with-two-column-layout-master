@@ -47,12 +47,22 @@ header {
 }
 
 .logo {
-  width: 100px;
+  width: calc(10vw + 3rem);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   margin-right: 5vw;
+  font-size: calc(0.8rem + 0.25vw);
+}
+
+nav a:last-child {
+  margin-right: 0;
 }
 /* End header */
 /* Start main */
