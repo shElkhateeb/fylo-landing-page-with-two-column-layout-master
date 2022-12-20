@@ -329,7 +329,7 @@ ul a {
     margin-inline: 0;
   }
 
-  input {
+  form * {
     width: 100%;
   }
 
