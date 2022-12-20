@@ -259,6 +259,10 @@ ul a {
     margin: auto;
   }
 
+  section > * {
+    margin-inline: 0;
+  }
+
   input {
     width: 100%;
   }
