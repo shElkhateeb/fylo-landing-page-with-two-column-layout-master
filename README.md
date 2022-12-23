@@ -53,6 +53,7 @@ Users should be able to:
 ### Useful resources
 
 - [Form Validation UX in HTML and CSS](https://css-tricks.com/form-validation-ux-html-css/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [ryodgie/fylo-landing-page](https://github.com/ryodgie/fylo-landing-page) - This repo helped me fix the curved background.
 
 ## Author
 
